@@ -11,4 +11,8 @@ app.use('/api/user', require('./routes/logout'));
 app.use('/api/user', require('./routes/deleteUser'));
 app.use('/api/user/student', require('./routes/studentInfo'));
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
 app.listen(PORT, () => console.log(`Running on PORT: ${process.env.PORT}`));

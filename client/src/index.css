@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+@media screen and (max-width: 576px) {
+  .fontsize-xs-24 {
+    font-size: 24px;
+  }
+
+  .fontsize-xs-32 {
+    font-size: 32px;
+  }
+
+  .fontsize-xs-38 {
+    font-size: 38px;
+  }
+
+  .fontsize-xs-48 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .fontsize-sm-24 {
+    font-size: 24px;
+  }
+
+  .fontsize-sm-32 {
+    font-size: 32px;
+  }
+
+  .fontsize-sm-38 {
+    font-size: 38px;
+  }
+
+  .fontsize-sm-48 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fontsize-md-24 {
+    font-size: 24px;
+  }
+
+  .fontsize-md-32 {
+    font-size: 32px;
+  }
+
+  .fontsize-md-38 {
+    font-size: 38px;
+  }
+
+  .fontsize-md-48 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fontsize-lg-24 {
+    font-size: 24px;
+  }
+
+  .fontsize-lg-32 {
+    font-size: 32px;
+  }
+
+  .fontsize-lg-38 {
+    font-size: 38px;
+  }
+
+  .fontsize-lg-48 {
+    font-size: 48px;
+  }
+
+  .mr-lg-250 {
+    margin-right: 250px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .fontsize-xl-24 {
+    font-size: 24px;
+  }
+
+  .fontsize-xl-32 {
+    font-size: 32px;
+  }
+
+  .fontsize-xl-38 {
+    font-size: 38px;
+  }
+
+  .fontsize-xl-44 {
+    font-size: 44px;
+  }
+
+  .fontsize-xl-48 {
+    font-size: 48px;
+  }
+}
+
+
+.error-box {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar-container {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+	max-height: 100vh;
+  top: 0; 
+  color: #fff;
+  transition: all 0.3s;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+}
+
+#content {
+  width: 100%;
+  transition: all 0.3s;
+  min-height: 100vh;
+	max-height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  #sidebar-container {
+    margin-left: -250px;
+  }
+
+  #heading {
+    margin: auto;
+  }
+}
+
+#sidebar {
+  background-color: rgba(78, 102, 222, 0.8);
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  top: 0;
+}
+
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #content {
+    margin-left: 250px;
+    transition: all 0.3s;
+    overflow-x: hidden;
+  }
+
+  #heading {
+    margin: 0 0 0 33%;
+  }
+}
+
+.nav-item {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  border-radius: 15px;
+  width: 95%;
+  margin: auto;
+  display: block;
+  margin-bottom: 2px; 
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+span[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.drop-item {
+  font-size: 1.1em !important;
+  padding-left: 30px !important;
+  line-height: 2.5em;
+  border-radius: 15px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin: 2px;
+}
+.drop-item:hover {
+  color: #7386D5;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
+}
